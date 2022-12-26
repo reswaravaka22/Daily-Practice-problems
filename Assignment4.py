@@ -29,12 +29,12 @@ class RestaurantCheck:
     def print_check(self):
         self.checkfile=open(f"Check{self.check_number}.txt","a")
         self.checkfile.write(f"""
-        Check Number:{self.check_number}
-        Sales Tax:{self.sales_tax_percent}%
-        Subtotal:${self.subtotal}
-        Total:${self.Total}
-        Table number:{self.table_number}
-        Server:{self.server_name}        """)
+        Check Number: {self.check_number}
+        Sales Tax: {self.sales_tax_percent}%
+        Subtotal: ${self.subtotal}
+        Total: ${self.Total}
+        Table number: {self.table_number}
+        Server: {self.server_name}""")
         return self
 check1=RestaurantCheck(1,6,100,5,"Sonic the Hedgehog")
 check1.calculate_total().print_check()
